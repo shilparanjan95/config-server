@@ -1,0 +1,5 @@
+spring:
+  application:
+   name: booking-ms
+server:
+  port: 8083
