@@ -1,13 +1,17 @@
 spring:
  application:
   name: flight-data-ms
- h2:
-   console:
-     enabled: true
  datasource:
-   url: jdbc:h2:mem:flightdb
-   username: sa
-   password: sa
+   url: jdbc:mysql://localhost:3306/flightdb
+   username: root
+   password: shilpa 
+ jpa:
+   properties:
+    hibernate:
+     dialect: org.hibernate.dialect.MySQLDialect
+   show-sql: true  
+   hibernate:
+    ddl-auto: update
  config:
   server:
    git:
